@@ -1,0 +1,26 @@
+# Backend Framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# Machine Learning
+pandas==2.1.3
+numpy==1.24.3
+scikit-learn==1.3.0
+
+# Image Processing & OCR
+Pillow==10.1.0
+pytesseract==0.3.10
+opencv-python==4.8.1.78
+
+# Data Processing
+kaggle==1.7.4.5
+
+# Optional: Advanced ML (if needed)
+# transformers==4.35.0
+# torch==2.1.0
+# datasets==2.14.6
+# accelerate==0.24.1
+
+# Visualization (optional)
+# plotly==5.18.0
+# kaleido==0.2.1

@@ -1,0 +1,152 @@
+{
+  "timestamp": "2025-10-10T12:39:41.656536",
+  "model_type": "Logistic Regression",
+  "vectorizer_type": "TF-IDF",
+  "total_samples": 40,
+  "train_samples": 28,
+  "test_samples": 12,
+  "fake_samples": 20,
+  "legit_samples": 20,
+  "accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "roc_auc": 1.0,
+  "true_positives": 6,
+  "true_negatives": 6,
+  "false_positives": 0,
+  "false_negatives": 0,
+  "num_features": 500,
+  "vocabulary_size": 500,
+  "max_features": 500,
+  "ngram_range": [
+    1,
+    2
+  ],
+  "max_iter": 1000,
+  "C": 1.0,
+  "top_fake_indicators": [
+    {
+      "feature": "fee",
+      "coefficient": 0.4584023732166132
+    },
+    {
+      "feature": "pay",
+      "coefficient": 0.44858490339993706
+    },
+    {
+      "feature": "money",
+      "coefficient": 0.35025289455441444
+    },
+    {
+      "feature": "guaranteed",
+      "coefficient": 0.3067717294545843
+    },
+    {
+      "feature": "gmail com",
+      "coefficient": 0.2781268622979906
+    },
+    {
+      "feature": "gmail",
+      "coefficient": 0.2781268622979906
+    },
+    {
+      "feature": "income",
+      "coefficient": 0.273184018090893
+    },
+    {
+      "feature": "work",
+      "coefficient": 0.2550864789108795
+    },
+    {
+      "feature": "work home",
+      "coefficient": 0.2504741354896565
+    },
+    {
+      "feature": "home",
+      "coefficient": 0.2504741354896565
+    },
+    {
+      "feature": "easy",
+      "coefficient": 0.2466827480325033
+    },
+    {
+      "feature": "processing",
+      "coefficient": 0.2088059424661263
+    },
+    {
+      "feature": "processing fee",
+      "coefficient": 0.2088059424661263
+    },
+    {
+      "feature": "today",
+      "coefficient": 0.20622463874869584
+    },
+    {
+      "feature": "registration",
+      "coefficient": 0.2049848802976582
+    }
+  ],
+  "top_legit_indicators": [
+    {
+      "feature": "years",
+      "coefficient": -0.3771613023191321
+    },
+    {
+      "feature": "benefits",
+      "coefficient": -0.35520119109104703
+    },
+    {
+      "feature": "salary",
+      "coefficient": -0.3355332909279275
+    },
+    {
+      "feature": "years experience",
+      "coefficient": -0.32482333099479765
+    },
+    {
+      "feature": "experience salary",
+      "coefficient": -0.2406920973578409
+    },
+    {
+      "feature": "experience",
+      "coefficient": -0.2168553364842134
+    },
+    {
+      "feature": "python",
+      "coefficient": -0.20367297494649514
+    },
+    {
+      "feature": "apply",
+      "coefficient": -0.20253631434182964
+    },
+    {
+      "feature": "140k",
+      "coefficient": -0.17846707829934524
+    },
+    {
+      "feature": "90k",
+      "coefficient": -0.17700639920530045
+    },
+    {
+      "feature": "company com",
+      "coefficient": -0.17176443618314083
+    },
+    {
+      "feature": "company",
+      "coefficient": -0.17176443618314083
+    },
+    {
+      "feature": "100k",
+      "coefficient": -0.17130252523395828
+    },
+    {
+      "feature": "required years",
+      "coefficient": -0.16944952847290584
+    },
+    {
+      "feature": "engineer",
+      "coefficient": -0.16849496194612718
+    }
+  ]
+}

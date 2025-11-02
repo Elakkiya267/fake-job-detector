@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - JobGuard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🛡️</div>
+                    <h1>JobGuard</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Detector</a>
+                    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+                    <a href="chatbot.html" class="nav-link">Career Assistant</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">📊 Detection Dashboard</h2>
+                    <p class="hero-subtitle">Track your job posting analysis history and statistics</p>
+                </div>
+            </section>
+
+            <!-- Stats Overview -->
+            <section class="stats-overview">
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">🔍</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="totalScans">0</div>
+                            <div class="stat-label">Total Scans</div>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="legitimateCount">0</div>
+                            <div class="stat-label">Legitimate</div>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">⚠️</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="fakeCount">0</div>
+                            <div class="stat-label">Fake Detected</div>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <div class="stat-value" id="avgScore">0</div>
+                            <div class="stat-label">Avg Score</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <div class="charts-grid">
+                    <!-- Detection Trend Chart -->
+                    <div class="card glass-card chart-card">
+                        <div class="card-header">
+                            <h3>📈 Detection Trend</h3>
+                            <p>Daily detection activity over time</p>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="trendChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Score Distribution Chart -->
+                    <div class="card glass-card chart-card">
+                        <div class="card-header">
+                            <h3>📊 Score Distribution</h3>
+                            <p>Distribution of legitimacy scores</p>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="scoreChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Detection Methods Chart -->
+                    <div class="card glass-card chart-card">
+                        <div class="card-header">
+                            <h3>🔍 Detection Methods</h3>
+                            <p>Text vs Image analysis usage</p>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="methodChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Risk Categories Chart -->
+                    <div class="card glass-card chart-card">
+                        <div class="card-header">
+                            <h3>⚠️ Risk Categories</h3>
+                            <p>Most common red flags detected</p>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="riskChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recent Detections -->
+            <section class="recent-section">
+                <div class="card glass-card">
+                    <div class="card-header">
+                        <h3>🕒 Recent Detections</h3>
+                        <p>Your latest job posting analyses</p>
+                        <button class="btn btn-secondary" id="clearHistoryBtn">🗑️ Clear History</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="recent-list" id="recentList">
+                            <div class="empty-state">
+                                <div class="empty-icon">📋</div>
+                                <p>No detections yet. Start analyzing job postings to see your history here.</p>
+                                <a href="index.html" class="btn btn-primary">Start Analyzing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assistant - JobGuard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">🛡️</div>
+                    <h1>JobGuard</h1>
+                </div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Detector</a>
+                    <a href="dashboard.html" class="nav-link">Dashboard</a>
+                    <a href="chatbot.html" class="nav-link active">Career Assistant</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h2 class="hero-title">🤖 Career Assistant</h2>
+                    <p class="hero-subtitle">Get personalized course and job recommendations from our AI assistant</p>
+                </div>
+            </section>
+
+            <!-- Chatbot Section -->
+            <section class="chatbot-page-section">
+                <div class="card glass-card chatbot-card">
+                    <div class="card-header">
+                        <h3>💬 Chat with Career Assistant</h3>
+                        <p>Ask about courses, jobs, or career guidance</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="chat-container" id="chatContainer">
+                            <div class="chat-message bot-message">
+                                <div class="message-avatar">🤖</div>
+                                <div class="message-content">
+                                    <p>Hi! I'm your career assistant. I can help you with:</p>
+                                    <ul>
+                                        <li>🎓 Latest courses from top platforms</li>
+                                        <li>💼 Legitimate job opportunities</li>
+                                        <li>📈 Career guidance and skill development</li>
+                                        <li>💡 Industry insights and trends</li>
+                                    </ul>
+                                    <p>What would you like to explore today?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-input-container">
+                            <input 
+                                type="text" 
+                                id="chatInput" 
+                                placeholder="Ask about courses, jobs, or career advice..."
+                                class="chat-input modern-input"
+                            />
+                            <button id="sendChatBtn" class="btn btn-chat">
+                                <span>Send</span>
+                                <span class="send-icon">🚀</span>
+                            </button>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <h4>Quick Actions:</h4>
+                            <div class="quick-buttons">
+                                <button class="quick-action-btn" data-message="Show me programming courses">
+                                    <span class="quick-icon">💻</span>
+                                    <span>Programming</span>
+                                </button>
+                                <button class="quick-action-btn" data-message="Show me data science courses">
+                                    <span class="quick-icon">📊</span>
+                                    <span>Data Science</span>
+                                </button>
+                                <button class="quick-action-btn" data-message="Show me design courses">
+                                    <span class="quick-icon">🎨</span>
+                                    <span>Design</span>
+                                </button>
+                                <button class="quick-action-btn" data-message="Show me marketing courses">
+                                    <span class="quick-icon">📢</span>
+                                    <span>Marketing</span>
+                                </button>
+                                <button class="quick-action-btn" data-message="Show me job opportunities">
+                                    <span class="quick-icon">💼</span>
+                                    <span>Jobs</span>
+                                </button>
+                                <button class="quick-action-btn" data-message="Career tips">
+                                    <span class="quick-icon">💡</span>
+                                    <span>Career Tips</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>
