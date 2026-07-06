@@ -3,14 +3,14 @@ Flask==3.0.0
 flask-cors==4.0.0
 
 # Machine Learning
-pandas==2.1.3
-numpy==1.24.3
-scikit-learn==1.3.0
+pandas==2.2.3
+numpy==2.1.3
+scikit-learn==1.5.2
 
 # Image Processing & OCR
-Pillow==10.1.0
+Pillow==10.4.0
 pytesseract==0.3.10
-opencv-python==4.8.1.78
+opencv-python==4.10.0.84
 
 # Data Processing
 kaggle==1.7.4.5
